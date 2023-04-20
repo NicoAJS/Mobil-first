@@ -4,10 +4,17 @@
 
 /**************** BODY *************************/
 body {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     /*background-image: url("billeder/bg.png");*/
     background-color: black;
     
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }
 
 
@@ -16,13 +23,24 @@ body {
    background-color: rgb(0, 0, 0);
 }
 
+@keyframes nav {
+    from{
+        font-size: 20pt;
+        color: white;
+        }
+    to{
+        font-size: 25pt;
+        color: #5CB8E4;
+    }
+}
+
 
 nav {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
-    max-width: 65%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
@@ -35,6 +53,13 @@ nav a {
     font-size: 20pt;
     text-decoration: none;
     font-family: 'Jockey One', sans-serif;
+}
+
+nav a:hover{
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
 }
 
 
@@ -64,33 +89,40 @@ nav a {
 }
 
 #info-tekst{
-    color:white;
-    font-family: 'Jockey One', sans-serif;
     display: flex;
-    text-align: center;
     justify-content: center;
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;    
+    color: white;
+    padding-top: 50px;
+    font-family: 'Jockey One', sans-serif;
 }
 
 #åbningstider{
     color: white;
-    display: flex;
-    justify-content: center;
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     font-family: 'Jockey One', sans-serif;
+    
 }
 
 /****************** FOOTER *********************/
 footer {
-    background-color: rgb(27, 94, 94);
-    margin-top: 100px;
-    
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5CB8E4;
+    max-width: 100%;
+    padding-top: 10px;
 }
 
+.foot {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
 
 
 
