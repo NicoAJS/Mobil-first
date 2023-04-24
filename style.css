@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
 
+
 /**************** BODY *************************/
 body {
     margin-left: auto;
     margin-right: auto;
-    /*background-image: url("billeder/bg.png");*/
+    margin-bottom: auto;
     background-color: black;
     
 }
@@ -14,8 +15,9 @@ body {
 main {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
+
 
 
 /************ NAV **************/
@@ -37,8 +39,7 @@ main {
 
 nav {
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0);
     max-width: 70%;
     margin-left: auto;
@@ -125,4 +126,248 @@ footer {
 }
 
 
+
+/************* RESPONSIV *****************/
+
+/*nav burger*/
+#navburger ul li{
+    list-style: none;
+}
+
+#navburger{
+    min-width: 100%;
+    background: black;
+    height: 90px;
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+
+
+label.logo{
+    color: rgb(175, 59, 133);
+    font-size: 35px;
+    line-height: 80px;
+    font-size: bold;
+}
+
+
+#navburger ul{
+    float: right;
+    margin-right: 20px;
+}
+
+#navburger ul li{
+   display: inline-block;
+   line-height: 50px;
+}
+
+#navburger ul li a{
+    color: white;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 952px){
+   
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 987px){
+
+    main{
+    padding-top: 60px ;
+    }
+
+     #navburger{
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      
+     }
+
+     nav{
+        display: none;
+     }
+
+
+    .checkbtn{
+       display: block; 
+    }
+
+
+    ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 74px;
+    left: -130%;
+    transition: all .5s;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    
+    }
+    
+    nav ul li{
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+    }
+
+    nav ul li a{
+    font-size: 20px ;
+    }
+
+
+    #check:checked ~ ul {
+     left: 0;
+    }
+
+    
+    section{
+     display: block;
+    }
+}
+
+
+section{
+    background-color: black;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    display: none;
+}
+
+
+/***************************************/
+
+/************** MENU ******************/
+
+.kort{
+    background-color: #fffeef;
+    justify-content: space-around;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+
+.kort > section{
+    width: 350px;
+    height:500px;
+    margin-top: 10px;
+    padding:10px;
+    text-align: center;
+}
+
+.kort img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/****************** FOOTER *********************/
+
+header {
+    border-bottom: solid 2px;
+    border-color: #c400ff;
+    padding-top: 0%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5CB8E4;
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+.foot {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.kort{
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.kort > section{
+    width: 300px;
+    height:300px;
+    background-color:black;
+    margin-top: 10px;
+    padding:10px;
+    text-align: center;
+}
+
+.kort img:hover {
+    transform: scale(1.1);
+}
+
+.plasholder{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: black;
+    text-decoration: #fffeef;
+    border-radius: 8%;
+}
+
+.pladsholder div h4{
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.overskriftmenu{
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    color: #fffeef;
+}
+
+
+.billeder{
+    border-radius: 8%;
+}
 
