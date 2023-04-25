@@ -2,34 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
 
-/********* RESPONSIV LAPTOP *******************/
-
-@media (min-width:987px){
-
-    .kortet{
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        gap: 30px;
-    }
-
-    h6 {
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        justify-content: center;
-        font-size: 12pt;
-    }
-
-
-}
-
-
-/**************** BODY *************************/
+/**************** BODY / MAIN *************************/
 body {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    background-color: black;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
     
 }
 
@@ -37,6 +13,12 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
+}
+
+header {
+    border-bottom: #c400ff;
+    border-bottom-style:solid;
+    border-width: 2px
 }
 
 /************ NAV **************/
@@ -51,7 +33,7 @@ main {
         }
     to{
         font-size: 25pt;
-        color: #5CB8E4;
+        color: #c400ff;
     }
 }
 
@@ -86,35 +68,6 @@ nav a:hover{
 
 
 
-/******************* MAIN ***********************/
-
-#intro-teskst, h1, h3{
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Jockey One', sans-serif;
-}
-
-#info-tekst{
-    display: flex;
-    justify-content: center;
-    text-align: center;    
-    color: white;
-    padding-top: 50px;
-    font-family: 'Jockey One', sans-serif;
-}
-
-#åbningstider{
-    color: white;
-    text-align: center;
-    font-family: 'Jockey One', sans-serif;
-    
-}
-
 /****************** FOOTER *********************/
 footer {
     display: flex;
@@ -141,6 +94,13 @@ footer {
 
 /*nav burger*/
 
+#burgertop {
+    height: 120px;
+    border-bottom: #c400ff;
+    border-bottom-style:solid;
+    border-width: 2px
+}
+
 
 #navburger ul li{
     list-style: none;
@@ -154,8 +114,8 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
+    
 }
-
 
 
 
@@ -197,26 +157,7 @@ label.logo{
 }
 
 
-
 @media (max-width: 987px){
-
-    .pladsholder{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    footer {
-        padding-top: 50px;
-    }
-
-    h6 {
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        justify-content: center;
-        font-size: 8pt;
-    }
-   
 
     label.logo{
         font-size: 30px;
@@ -279,18 +220,7 @@ label.logo{
 
     #check:checked ~ ul {
      left: 0;
-    }
-
-    /**
-    section{
-     display: block;
-    }
-
-    .kort {
-        display: block;
-        display: flex;
-        align-items: center;
-    }***/
+    } 
 }
 
 
@@ -302,96 +232,86 @@ label.logo{
 }
 
 
-/***************************************/
 
-/************** MENU ******************/
+/************** FORSIDE  ******************/
 
-.kort{
-    background-color: black;
-    display:flex;
-    justify-content: space-around;
+#intro-teskst, h1, h3{
     color: white;
-    margin-bottom: 20px;
-}
-
-.kort > section{
-    width: 300px;
-    height:300px;
-    background-color:black;
-    margin-top: 10px;
-    padding:10px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
 }
 
-.kort img:hover {
+#info-tekst{
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    color: white;
+    padding-top: 50px;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
+}
+
+#åbningstider{
+    color: white;
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+/**************** MENU  *******************/
+
+#masterofcards {
+
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cocktailkort {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+.cocktailkort:hover{
     transform: scale(1.1);
 }
 
-.plasholder{
-   
-    background-color: rgb(0, 0, 0);
-    color: black;
-    text-decoration: #fffeef;
-    border-radius: 8%;
-    max-width: 65%;
-    max-height: 100%;
-}
-
-.pladsholder div h4{
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.overskriftmenu{
-    display: flex;
-    justify-content: center;
-    font-family: 'Jockey One', sans-serif;
-    color: #fffeef;
-}
-
-
-.billeder{
-    border-radius: 8%;
+.drinkimg {
     width: 300px;
     height: 300px;
-
 }
 
-@media (max-width:987px) {
-
-    main {
-        max-width: 75%;
-        box-sizing: border-box;
-    }
-
-    .kort {
-        width: 200px;
-        height: 200px;
-    }
-
-    .billeder {
-        width: 200px;
-        height: 200px;
-    }
-
-    .kort{
-        background-color: black;
-        display:flex;
-        justify-content: space-around;
-        color: white;
-        margin-bottom: 20px;
-        margin: 0;
-        
-    }
-    
-    .kort > section{
-        width: 300px;
-        height:300px;
-        background-color:black;
-        margin-top: 10px;
-        padding:10px;
-        text-align: center;
-    }
-
+#cocktail-h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Jockey One', sans-serif;
 }
+
+#masterofcards h6 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12pt;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
+}
+
+
